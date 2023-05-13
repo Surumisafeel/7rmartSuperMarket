@@ -28,7 +28,7 @@ public class BaseClass {
 	@AfterMethod
 	public void closeBrowser()
 	{
-		driver.quit();
+		
 	}
 
 }

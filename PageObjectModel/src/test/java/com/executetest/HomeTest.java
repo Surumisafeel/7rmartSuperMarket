@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.basepackage.BaseClass;
+import com.utilities.Utility;
 
 import elementRepository.HomePage;
 
@@ -24,6 +25,11 @@ public class HomeTest extends BaseClass{
 		homePage= new HomePage(driver);
 		homePage.getHomePageHeaders();
 		
+	}
+	@Test
+	public void verifyExcelRead() {
+		Utility utility = new Utility(driver);
+		utility.getExcelcellData(0, 0);
 	}
 	}
 

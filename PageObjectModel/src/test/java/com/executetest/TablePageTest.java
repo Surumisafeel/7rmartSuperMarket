@@ -55,5 +55,11 @@ public class TablePageTest extends BaseClass {
 		tablepage.ElementClick();
 		tablepage.printSalaries();
 	}
-
+@Test
+public void verifyNames() {
+	tablepage= new TablePage(driver);
+	tablepage.ElementClick();
+	String officeName=tablepage.getPersonsOffice("Airi Satou");
+	System.out.println(officeName);
+}
 }

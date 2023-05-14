@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.executetest.TablePageTest">
+      <class name="com.executetest.DatePickersTest">
         <methods>
-          <include name="verifysalary"/>
+          <include name="verifyDatePicker"/>
           <include name="closeBrowser"/>
           <include name="launchURl"/>
         </methods>
-      </class> <!-- com.executetest.TablePageTest -->
+      </class> <!-- com.executetest.DatePickersTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

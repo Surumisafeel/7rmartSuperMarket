@@ -78,10 +78,10 @@ public class Base {
 
 	@AfterMethod(alwaysRun = true)
 	public void closeapplication(ITestResult itestresult) {
-		if (itestresult.getStatus() == ITestResult.FAILURE) {// itestresult is the listner
-			screenShot.takeScreenshot(driver, itestresult.getName());// itestresut.getName to get Tc name
+		if (itestresult.getStatus() == ITestResult.FAILURE) {
+			screenShot.takeScreenshot(driver, itestresult.getName());
 
 		}
-		//driver.close();
+		driver.close();
 	}
 }

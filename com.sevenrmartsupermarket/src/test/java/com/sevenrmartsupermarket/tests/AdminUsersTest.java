@@ -52,12 +52,13 @@ public class AdminUsersTest extends Base {
 	}
 
 	@Test
-	public void verifySearchResult() {
+	public void verifyUserSearchResult() {
 		loginPage = new LoginPage(driver);
 		adminuserspage = new AdminUsersPage(driver);
 		loginPage.loginUtility();
 		adminuserspage.clickOnAdminUsers();
-		adminuserspage.searchForAuser();
+		String user="Lauryn Stiedemann Boyer";
+		adminuserspage.searchForAuser(user);
 		String actualUserNameSearchResult = adminuserspage.getResultText();
 		String expectedUserNameSearchResult = "saj";
 		Assert.assertEquals(actualUserNameSearchResult, expectedUserNameSearchResult);

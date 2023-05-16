@@ -120,9 +120,9 @@ public class AdminUsersPage {
 	/**
 	 * method to search user
 	 */
-	public void searchForAuser() {
+	public void searchForAuser(String user) {
 		searchButton.click();
-		userNameSearch.sendKeys("Lauryn Stiedemann Boyer");
+		userNameSearch.sendKeys(user);
 		searchButtoninsideSearchBox.click();
 
 	}

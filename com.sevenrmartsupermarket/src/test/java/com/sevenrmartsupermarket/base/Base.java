@@ -82,6 +82,6 @@ public class Base {
 			screenShot.takeScreenshot(driver, itestresult.getName());// itestresut.getName to get Tc name
 
 		}
-		driver.close();
+		//driver.close();
 	}
 }

@@ -20,7 +20,7 @@ public class ManagePagesTest extends Base {
 		managepagespage = new ManagePagesPage(driver);
 		loginPage.loginUtility();
 		managepagespage.clickOnManagePages();
-		managepagespage.addPageContent(title, description, pageName,"");
+		managepagespage.addPageContent(title, description, pageName,image);
 	}
 
 	@Test

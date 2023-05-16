@@ -29,11 +29,15 @@ public class DataProviders {
 		Object data[][] = excelReader.getMultiDimentionalData(3, 6);
 		return data;
 	}
+	/**
+	 * method to get multidimentional excel data
+	 * @return Object [][]
+	 */
 	@DataProvider(name = "New Manage page creation data")
 	public Object[][] DataProviderManagePage() {
 		excelReader.setExcelFile("ManagePageContent","pageContent");
 
-		Object data[][] = excelReader.getMultiDimentionalData(3,3);
+		Object data[][] = excelReader.getMultiDimentionalData(2,4);
 		return data;
 	}
 }

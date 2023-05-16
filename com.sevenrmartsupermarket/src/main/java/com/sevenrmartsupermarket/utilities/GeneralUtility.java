@@ -1,5 +1,7 @@
 package com.sevenrmartsupermarket.utilities;
 
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -7,6 +9,7 @@ import java.util.List;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openxmlformats.schemas.drawingml.x2006.main.CTRegularTextRun;
 
 public class GeneralUtility {
 	WebDriver driver;
@@ -93,5 +96,22 @@ public class GeneralUtility {
 		return new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss").format(new Date());
 		
 	}
+	
+	public int getResponseStatusCode(String url) {
+		int responseCode=0;
+		HttpURLConnection huc = null;
+		try {
+			huc = (HttpURLConnection)(new URL(url).openConnection());
+			huc.setRequestMethod("HEAD");
+
+			huc.connect();
+			responseCode=huc.getResponseCode();
+			
+		} catch (Exception e) {
+		
+		}
+		return responseCode;
+	}
+
 
 }

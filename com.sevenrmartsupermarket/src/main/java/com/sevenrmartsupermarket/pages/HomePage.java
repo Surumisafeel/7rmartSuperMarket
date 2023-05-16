@@ -44,4 +44,11 @@ public class HomePage {
 		return generalUtility.get_TextOfElement(homePageLogo);
 	}
 
+	public void getResponseCode() {
+		generalUtility = new GeneralUtility(driver);
+		int statusCode = generalUtility
+				.getResponseStatusCode("https://groceryapp.uniqassosiates.com/public/assets/admin/dist/img/avatar5.png");
+		System.out.println(statusCode);
+	}
+
 }

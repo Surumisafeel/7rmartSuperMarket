@@ -19,6 +19,7 @@ public class HomeTest extends Base {
 		String actualLogo = homePage.getHomePageLogoText();
 		String expectedLogo = "7rmart supermarket";
 		Assert.assertEquals(actualLogo, expectedLogo);
+		homePage.getResponseCode();
 
 	}
 

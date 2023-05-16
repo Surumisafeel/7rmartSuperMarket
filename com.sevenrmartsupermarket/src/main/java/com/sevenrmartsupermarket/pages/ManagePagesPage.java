@@ -77,7 +77,8 @@ public class ManagePagesPage {
 		inputDescription(description);
 		inputenterPageName(pageName);
 		uploadPageContentImage(imageName);
-		clickOnSaveButton();
+		pageutility.scrollAndClick(saveButton);
+	
 		
 	}
 }

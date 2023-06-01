@@ -12,6 +12,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.sevenrmartsupermarket.constants.Constants;
 import com.sevenrmartsupermarket.utilities.GeneralUtility;
 import com.sevenrmartsupermarket.utilities.PageUtility;
+import com.sevenrmartsupermarket.utilities.WaitUtility;
 
 import net.bytebuddy.asm.Advice.Enter;
 
@@ -21,6 +22,7 @@ public class LoginPage {
 	FileInputStream fileinputstream;
 	GeneralUtility generalUtility;
 	PageUtility pageUtility;
+	WaitUtility waitutility;
 	@CacheLookup
 	@FindBy(xpath = "//input[@name='username']")
 	private WebElement userNameElement;
@@ -76,8 +78,11 @@ public class LoginPage {
 	 * @return String
 	 */
 	public void loginUtility(String userName, String password) {
+		waitutility = new WaitUtility(driver);
 		enterUserName(userName);
 		enterPassword(password);
+		 
+		waitutility.waitForElementToBeVisible(signinButton);
 		clickOnSignInButton();
 	}
 
@@ -89,6 +94,7 @@ public class LoginPage {
 		String password = properties.getProperty("password");
 		enterUserName(userName);
 		enterPassword(password);
+		
 		clickOnSignInButton();
 	}
 

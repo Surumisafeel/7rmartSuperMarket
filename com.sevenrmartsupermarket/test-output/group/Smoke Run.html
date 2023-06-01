@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon May 08 07:54:38 IST 2023</td>
+<td>Started on:</td><td>Tue May 23 21:22:55 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>29 seconds (29575 ms)</td>
+<tr><td>Total time:</td><td>35 seconds (35123 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td>smoke sanity </td>
 </tr><tr>
@@ -77,26 +77,57 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.sevenrmartsupermarket.tests.ManageUsersTest.verifyStatusChangeofUser()'><b>verifyStatusChangeofUser</b><br>Test class: com.sevenrmartsupermarket.tests.ManageUsersTest</td>
-<td><div><pre>java.lang.AssertionError: expected [×
-Alert!
-User Status Changed Successfully] but found [×
-Alert!
-User Status Changed Successfully]
-	at com.sevenrmartsupermarket.tests.ManageUsersTest.verifyStatusChangeofUser(ManageUsersTest.java:27)
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@class=&apos;table table-bordered table-hover table-sm&apos;]/tbody/tr[1]/td[6]/a[1]&quot;}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [79219a8703565332a4be0b64b1d439fe, findElement {using=xpath, value=//table[@class=&apos;table table-bordered table-hover table-sm&apos;]/tbody/tr[1]/td[6]/a[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\surum\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65033}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65033/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 79219a8703565332a4be0b64b1d439fe
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at com.sevenrmartsupermarket.pages.ManageUsersPage.clickOnDeactivationButton(ManageUsersPage.java:69)
+	at com.sevenrmartsupermarket.tests.ManageUsersTest.verifyStatusChangeofUser(ManageUsersTest.java:23)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace135002781", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace135002781'><pre>java.lang.AssertionError: expected [×
-Alert!
-User Status Changed Successfully] but found [×
-Alert!
-User Status Changed Successfully]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:655)
-	at org.testng.Assert.assertEquals(Assert.java:665)
-	at com.sevenrmartsupermarket.tests.ManageUsersTest.verifyStatusChangeofUser(ManageUsersTest.java:27)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace848644304", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace848644304'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@class=&apos;table table-bordered table-hover table-sm&apos;]/tbody/tr[1]/td[6]/a[1]&quot;}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [79219a8703565332a4be0b64b1d439fe, findElement {using=xpath, value=//table[@class=&apos;table table-bordered table-hover table-sm&apos;]/tbody/tr[1]/td[6]/a[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\surum\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65033}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65033/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 79219a8703565332a4be0b64b1d439fe
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at com.sevenrmartsupermarket.pages.ManageUsersPage.clickOnDeactivationButton(ManageUsersPage.java:69)
+	at com.sevenrmartsupermarket.tests.ManageUsersTest.verifyStatusChangeofUser(ManageUsersTest.java:23)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -126,19 +157,19 @@ User Status Changed Successfully]
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>2</td>
-<td>com.sevenrmartsupermarket.tests.ManageUsersTest@60099951</td></tr>
+<td>11</td>
+<td>com.sevenrmartsupermarket.tests.ManageUsersTest@4145bad8</td></tr>
 <tr>
 <td title='com.sevenrmartsupermarket.tests.ManageUsersTest.verifyUserDeletion()'><b>verifyUserDeletion</b><br>Test class: com.sevenrmartsupermarket.tests.ManageUsersTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@class=&apos;table table-bordered table-hover table-sm&apos;]//tbody//tr[5]//td[5]//a[3]&quot;}
-  (Session info: chrome=112.0.5615.138)
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@class=&apos;table table-bordered table-hover table-sm&apos;]//tbody//tr[1]//td[5]//a[3]&quot;}
+  (Session info: chrome=113.0.5672.127)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [596523c7f21f2da35e9cf43e988755cf, findElement {using=xpath, value=//table[@class=&apos;table table-bordered table-hover table-sm&apos;]//tbody//tr[5]//td[5]//a[3]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\surum\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62519}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62519/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 596523c7f21f2da35e9cf43e988755cf
+Command: [1f8490baf55c553429cf5b25ef25a309, findElement {using=xpath, value=//table[@class=&apos;table table-bordered table-hover table-sm&apos;]//tbody//tr[1]//td[5]//a[3]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\surum\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65059}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65059/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1f8490baf55c553429cf5b25ef25a309
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -153,16 +184,16 @@ Session ID: 596523c7f21f2da35e9cf43e988755cf
 	at com.sevenrmartsupermarket.pages.ManageUsersPage.clickOnDeleteUsers(ManageUsersPage.java:90)
 	at com.sevenrmartsupermarket.tests.ManageUsersTest.verifyUserDeletion(ManageUsersTest.java:35)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1583001542", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1583001542'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@class=&apos;table table-bordered table-hover table-sm&apos;]//tbody//tr[5]//td[5]//a[3]&quot;}
-  (Session info: chrome=112.0.5615.138)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1025566069", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1025566069'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@class=&apos;table table-bordered table-hover table-sm&apos;]//tbody//tr[1]//td[5]//a[3]&quot;}
+  (Session info: chrome=113.0.5672.127)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [596523c7f21f2da35e9cf43e988755cf, findElement {using=xpath, value=//table[@class=&apos;table table-bordered table-hover table-sm&apos;]//tbody//tr[5]//td[5]//a[3]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\surum\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62519}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62519/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 596523c7f21f2da35e9cf43e988755cf
+Command: [1f8490baf55c553429cf5b25ef25a309, findElement {using=xpath, value=//table[@class=&apos;table table-bordered table-hover table-sm&apos;]//tbody//tr[1]//td[5]//a[3]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\surum\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65059}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65059/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1f8490baf55c553429cf5b25ef25a309
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -211,7 +242,7 @@ Session ID: 596523c7f21f2da35e9cf43e988755cf
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>11</td>
-<td>com.sevenrmartsupermarket.tests.ManageUsersTest@60099951</td></tr>
+<td>com.sevenrmartsupermarket.tests.ManageUsersTest@4145bad8</td></tr>
 <tr>
 <td title='com.sevenrmartsupermarket.tests.LoginTest.verifyInvalidLoginErrorMessage()'><b>verifyInvalidLoginErrorMessage</b><br>Test class: com.sevenrmartsupermarket.tests.LoginTest</td>
 <td><div><pre>java.lang.AssertionError: expected [×
@@ -219,10 +250,10 @@ Alert!
 Invalid Username/Password] but found [×
 Alert!
 Invalid Username/Password]
-	at com.sevenrmartsupermarket.tests.LoginTest.verifyInvalidLoginErrorMessage(LoginTest.java:46)
+	at com.sevenrmartsupermarket.tests.LoginTest.verifyInvalidLoginErrorMessage(LoginTest.java:48)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1742798189", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1742798189'><pre>java.lang.AssertionError: expected [×
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1361755941", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1361755941'><pre>java.lang.AssertionError: expected [×
 Alert!
 Invalid Username/Password] but found [×
 Alert!
@@ -233,7 +264,7 @@ Invalid Username/Password]
 	at org.testng.Assert.assertEquals(Assert.java:131)
 	at org.testng.Assert.assertEquals(Assert.java:655)
 	at org.testng.Assert.assertEquals(Assert.java:665)
-	at com.sevenrmartsupermarket.tests.LoginTest.verifyInvalidLoginErrorMessage(LoginTest.java:46)
+	at com.sevenrmartsupermarket.tests.LoginTest.verifyInvalidLoginErrorMessage(LoginTest.java:48)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -263,8 +294,8 @@ Invalid Username/Password]
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>2</td>
-<td>com.sevenrmartsupermarket.tests.LoginTest@2af004b</td></tr>
+<td>1</td>
+<td>com.sevenrmartsupermarket.tests.LoginTest@7161d8d1</td></tr>
 </table><p>
 </body>
 </html>

@@ -42,7 +42,7 @@ public class Base {
 	public void initilize(String browser, String url) {
 		if (browser.equals("chrome")) {
 			ChromeOptions options = new ChromeOptions();
-			options.addArguments("--remote-allow-origins=*");
+			options.addArguments("--remote-allow-origins=*");//check selenium version
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver(options);
 

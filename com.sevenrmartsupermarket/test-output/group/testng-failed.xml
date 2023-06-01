@@ -12,21 +12,23 @@
       </run>
     </groups>
     <classes>
+      <class name="com.sevenrmartsupermarket.tests.LoginTest">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="launchBrowser"/>
+          <include name="closeapplication"/>
+          <include name="verifyInvalidLoginErrorMessage"/>
+        </methods>
+      </class> <!-- com.sevenrmartsupermarket.tests.LoginTest -->
       <class name="com.sevenrmartsupermarket.tests.ManageUsersTest">
         <methods>
+          <include name="launchBrowser"/>
           <include name="launchBrowser"/>
           <include name="verifyUserDeletion"/>
           <include name="closeapplication"/>
           <include name="verifyStatusChangeofUser"/>
         </methods>
       </class> <!-- com.sevenrmartsupermarket.tests.ManageUsersTest -->
-      <class name="com.sevenrmartsupermarket.tests.LoginTest">
-        <methods>
-          <include name="launchBrowser"/>
-          <include name="closeapplication"/>
-          <include name="verifyInvalidLoginErrorMessage"/>
-        </methods>
-      </class> <!-- com.sevenrmartsupermarket.tests.LoginTest -->
     </classes>
   </test> <!-- Smoke Run(failed) -->
 </suite> <!-- Failed suite [group] -->

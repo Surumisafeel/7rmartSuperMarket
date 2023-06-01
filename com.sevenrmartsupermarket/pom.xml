@@ -19,8 +19,8 @@
 
 					<configuration>
 						<suiteXmlFiles>
-							
-							<file>src\main\resources\XmlFiles\group.xml</file> 
+
+							<file>src\main\resources\XmlFiles\group.xml</file>
 						</suiteXmlFiles>
 					</configuration>
 				</plugin>
@@ -63,6 +63,10 @@
 			<artifactId>extentreports</artifactId>
 			<version>2.41.2</version>
 		</dependency>
-
+		<dependency>
+			<groupId>com.github.javafaker</groupId>
+			<artifactId>javafaker</artifactId>
+			<version>0.12</version>
+		</dependency>
 	</dependencies>
 </project>
